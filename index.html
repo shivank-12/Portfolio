@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel=" stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/643dfb89d3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+</head>
+<body>
+    <div id ="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services"> Interest</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class ="header-text">
+              <span class="multiText"></span>
+            <h1> Hello, I'm <span>Shivank srivastava</span><br>an epistemophile </h1>
+        </div>
+    </div>
+    <script>
+      var typingEffect = new Typed(".multiText",{
+            strings:["STUDENT","CODER","EXPLORER"],
+            loop:true,
+            typespeed:100,
+            backspeed:80,
+            backDelay:1500
+      })
+    </script>
+    
+   
+    <!-- ------- about------ -->
+    <div id="about">
+       <div class="container">
+          <div class="row">
+             <div class="about-col-1">
+                <img src="images/myself.jpeg">
+                
+             </div>
+                  <div class="about-col-2">
+                   <h1 class="sub-title">About me</h1>
+                      <p> I'm a 2nd year computer science undergraduate at Vellore Institutre Of Technology . 
+
+                        I'm proficient at Data Structures and Algorithms and possess strong problem solving skills. I have a good grasp over CS fundamentals including,
+                         but not limited to Object Oriented Programming (OOP) in C++.
+                        
+                        I'm interested in full-stack web development and cloud computing.  I have also  interested to work upon databases like MongoDB and MySQL.
+                        
+                        I would describe myself as a hardworking and perseverant individual who's ever ready to take up new challenges and tasks. I like throwing myself out of my comfort zone, as I believe there's where the real learning and growth happens. I'm a quick learner and always enthusiastic to learn new skills and technologies. 
+                        Also, I possess good communication and presentation skills.
+                        In my leisure time, I enjoy watching  news on geopolitics and relations, reading blogs and listening music. I also love to travel and always ready to make a trip to explore places.
+                      </p>
+
+                      <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('SKILLS')"> SKILLS </p>
+                           <p class ="tab-links" onclick="opentab('EXPERIENCE')">EXPERIENCE</p>
+                           <p class = "tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                      </div>
+
+                      <div class ="tab-contents active-tab" id="SKILLS">
+                        
+                        <ul> 
+                            
+                            <li><span>GOOGLE CLOUD COMPUTING 
+                            <li><span>AWS CLOUD COMPUTING</span></li>
+                            <li><span>WEB DEVELOPMENT</span></li>
+                            <li><span> C++ PROGRAMMING LANGUAGE</span></li>
+                            <li><span> DATA STRUCTURE AND ALGORITHM</span></li>
+
+                        </ul>
+                      </div>
+
+                      <div class ="tab-contents" id="EXPERIENCE">
+                        
+                        <ul> 
+                            
+                            <li><span>RENDEZVOUS IIT D EVENT COORDINATOR</span></li>
+                            <li><span>VIT GRAVITAS'22 EVENT COORDINATOR</span></li>
+                            <li><span>VIT Spartans TECHNICAL AND MANAGEMENT MEMBER</span></li>
+                            
+
+                        </ul>
+                      </div>
+
+                      <div class ="tab-contents" id="EDUCATION">
+                        
+                        <ul> 
+                            
+                            <li><span>(2007-2019)<br> 
+                              RBK SCHOOL ICSE (NUR-10TH)</span></li>
+                            <li><span>(2019-2020)<br>
+                               PODDAR INTERNATIONAL COLLEGE CBSE (11TH-12TH) </span></li>
+                            <li><span>(2021-2025)<br>
+                               VELLORE INSTITUTE OF TECHNOLOGY(UG DEGREE)</span></li>
+                            
+                        </ul>
+                      </div>
+             </div>
+       </div>
+       <!-- -------services------- -->
+       <div id="services">
+           <div class="'container">
+              <h1 class="sub-title">My Interest</h1>
+              <div class="services-list">
+                <div>
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <h2>Web design</h2>
+                  <p>  It refers to planning, conceptualizing, and arranging content online. Website design considers both visual aesthetics and functionality, and includes web pages, mobile apps, and user interfaces. </p>
+                  <a  href="#">Learn more</a>
+                  
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-cloud"></i>
+                  <h2>Cloud computing</h2>
+                  <p>cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale.</p>
+                  <a href="#">Learn more</a>
+                  
+                </div>
+
+                <div>
+                  <i class="fa-sharp fa-solid fa-database"></i>></i>
+                  <h2>Data Science</h2>
+                  <p>Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI), and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization’s data. These insights can be used to guide decision making and strategic planning.</p>
+                  <a  href="#">Learn more</a>
+                  
+                </div>
+              </div>
+           </div>
+       </div>
+
+       <!-- ----------portfolio--------- -->
+       <div id="portfolio">
+           <h1 class="sub-title">My Work</h1>
+           <div class ="work-list">
+              <div class="work">
+                  <img src="images/work-1.png">
+                  <div class="layer">
+                    <h3> WEBSITE </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus, tenetur optio mollitia rerum saepe inventore, doloremque ea, vel tempore adipisci deserunt dicta! Officia voluptatem rerum soluta doloremque molestias tempore.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                  </div>
+              </div>
+              <div class="work">
+                <img src="images/portfolio3.jpg">
+                <div class="layer">
+                  <h3> CLOUD WORK </h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus, tenetur optio mollitia rerum saepe inventore, doloremque ea, vel tempore adipisci deserunt dicta! Officia voluptatem rerum soluta doloremque molestias tempore.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                  <h3> OTHER </h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus, tenetur optio mollitia rerum saepe inventore, doloremque ea, vel tempore adipisci deserunt dicta! Officia voluptatem rerum soluta doloremque molestias tempore.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  
+                </div>
+              </div>
+
+              <a href="#" class="btn">See more</a>
+           </div>
+       </div>
+
+       <!-- --------contact-------- -->
+       <div id="contact">
+          <div class="container">
+               <div class ="row">
+                   <div class="contact-left">
+                       <h1 class="sub-title">Contact Me</h1>
+                       <p><i class="fa-sharp fa-solid fa-paper-plane"></i>    contact@example.com</p>
+                       <p><i class="fa-sharp fa-solid fa-phone-volume"></i>   1234567890</p>
+                       <div class="social-icons">
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                          <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                          
+                       </div>
+
+                       <a href="" class ="btn btn2">Download CV</a>
+                       
+                   </div>
+                   <div class="contact-right">
+                       <form>
+                           <input type="text" name="Name" placeholder="Your Name" required>
+                           <input type="email" name="email"placeholder="Your email"required>
+                           <textarea name="Message" rows="5" placeholder="Your message"></textarea>
+                           <button type="submit" class="btn btn2">Submit</button>
+                       </form> 
+                   </div>
+               </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright © Shivank Srivastava. Made with <i class="fa-solid fa-heart"></i></p>
+          </div>
+       </div>
+       <script>
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+
+          function opentab(tabname) {
+            for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+          }
+       </script>
+
+       <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+          sidemeu.style.right ="0";
+        }
+        function closemenu(){
+          sidemeu.style.right ="-200px";
+        }
+       </script>
+       
+    
+</body>
+</html>
